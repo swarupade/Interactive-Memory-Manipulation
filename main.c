@@ -10,10 +10,10 @@ int main()
 	printf("\n********************* Welcome******************************\n");
 	while(1)
 	{
-		printf("\n To invoke the help function, type \"help\"\n");
-		printf("\nEnter your option:\n1. To allocate memory - \"allocate\"\n2. To free memory - \"free\"\n3. To display allocated memory - \"display\"\
-			\n4. To write memory - \"write\"\n5. To invert block \"invert\"\n6. To generate a pattern \"generate\"\n 7. To Verify pattern \"verify\"\n\
-			8. To Exit \"exit\"\n");
+		printf("\nTo invoke the help function, type \"help\"\n");
+		printf("\nEnter your option:\n1. To allocate memory - \"allocate\"\n2. To free memory - \"free\"\n3. To display allocated memory - \"display\"");
+		printf("\n4. To write memory - \"write\"\n5. To invert block \"invert\"\n6. To generate a pattern \"generate\"\n7. To Verify pattern \"verify\"");
+		printf("\n8. To Exit \"exit\"\n");
 
 		scanf("\n%s",input);
 
@@ -34,7 +34,7 @@ int main()
        		else if(strcmp(input,"exit")==0)
              		exit(1);
        		else
-       	     		printf("\n You have entered an invalid command\nPlease type help to get started\n");
+       	     		printf("\n-----> You have entered an invalid command\n-----> Please type help to get started\n");
 	}
 }	
 

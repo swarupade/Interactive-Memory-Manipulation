@@ -1,0 +1,29 @@
+
+allocate(int) 			- Allocates a block of memory for use by the application. 
+							 The user specifies the number of 32-bit words of memory to allocate.
+							 Type allocate(int) to call allocate.
+
+free             			- frees the previously allocated memory. \n Type free to call free
+
+display(int, int) 		- Displays contents of memory in unsigned 32-bit hexadecimal format. 
+							 The user should specify an address and the number of 32-bit words to display.
+							 Type display(int, int) to call display.
+
+write (int, uint32_t)-  A 32-bit unsigned hexadecimal value is written to a specified memory location.
+                               The User specifies an address and the 32-bit unsigned hexadecimal value to write.
+                               Type write (int, uint32_t) to call write.
+
+invert(int, int)        - Inverts all memory bits in a specified area of memory.
+                              The user specifies the address and the number of 32-bit words.
+                             Type invert(int, int) to call invert.
+
+write (int, int, int)  - Write a pseudo-random pattern in area of memory.
+                             The user specifies the address and number of 32-bit words and seed value. 
+                             Type write(int, int, int) to call write.
+
+verify                   - Verifies a pseudo-random pattern in a specific area of memory.
+                             Type verify to call verify.
+
+
+
+
