@@ -2,34 +2,34 @@
 
 
 project1: main.o help.o free.o write.o generate.o verify.o allocate.o invert.o display.o
-	cc  main.o help.o free.o write.o generate.o verify.o allocate.o invert.o display.o -o project1
+	gcc -Wall  main.o help.o free.o write.o generate.o verify.o allocate.o invert.o display.o -o project1
 
 main.o: main.c main.h
-	cc -c  main.c
+	gcc -Wall -c  main.c
 
 help.o: help.c help.h
-	cc -c help.c
+	gcc -Wall -c help.c
 
 free.o: free.c free.h
-	cc -c free.c
+	gcc -Wall -c free.c
 
 write.o: write.c write.h
-	cc -c write.c
+	gcc -Wall -c write.c
 
 generate.o: generate.c generate.h
-	cc -c generate.c
+	gcc -Wall -c generate.c
 
 verify.o: verify.c verify.h
-	cc -c verify.c
+	gcc -Wall -c verify.c
 
 allocate.o: allocate.c allocate.h
-	cc -c allocate.c
+	gcc -Wall -c allocate.c
 
 invert.o: invert.c invert.h
-	cc -c invert.c
+	gcc -Wall -c invert.c
 
 display.o: display.c display.h
-	cc -c display.c
+	gcc -Wall -c display.c
 
 clean:
 	rm project1 main.o help.o free.o write.o generate.o verify.o allocate.o invert.o display.o

@@ -1,3 +1,8 @@
+
+
+
+
+// Header files
 #include "main.h"
 
 
@@ -10,7 +15,7 @@ typedef struct lookup
 
 
 // main function
-void main()
+int  main()
 {
 	char input[10];//for the user input
 	
@@ -64,6 +69,7 @@ void main()
 		      printf("\nYou have entered an invalid command\nPlease type \"help\" for help\n");
 
 	}
+	return 0;
 }
 			
 	
