@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-void write();
+void write_memory();
 
 
 

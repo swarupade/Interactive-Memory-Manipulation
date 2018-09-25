@@ -2,7 +2,7 @@
 
 
 
-void write()
+void write_memory()
 {
 
 

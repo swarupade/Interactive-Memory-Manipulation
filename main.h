@@ -8,6 +8,6 @@
 #include "verify.h"
 #include "generate.h"
 #include "invert.h"
-
+#include "write.h"
 
 
