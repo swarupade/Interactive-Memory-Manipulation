@@ -1,7 +1,7 @@
 #include "main.h"
 
 
-
+//creating a structure for lookup table
 typedef struct lookup
 {
 	void (*func1)(void);
@@ -9,10 +9,10 @@ typedef struct lookup
 }table;	
 
 
-
+// main function
 void main()
 {
-	char input[10];
+	char input[10];//for the user input
 	
 	printf("\n********************* Welcome******************************\n");
 
@@ -23,12 +23,15 @@ void main()
 		printf("\n4. To write memory - \"write\"\n5. To invert block \"invert\"\n6. To generate a pattern \"generate\"\n7. To Verify pattern \"verify\"");
 		printf("\n8. To Exit \"exit\"\n");
 
+		//resetting the input variable
 		memset(input,0,sizeof(input));
 		scanf("\n%s",input);
 
+		//to exit from the program
 		if(strcmp(input,"exit")==0)
 			exit(1);
 	
+		//look up table
 		table table_lookup[] =
 		{
 			{help,"help"},
@@ -41,11 +44,14 @@ void main()
 			{verify,"verify"},
 			{NULL," "}
 		};
+
+
 		for(int i=0;(table_lookup[i].func1)!=NULL ; i++)
 		{
+			//comparing the user option in the lookup table
 			if(strcmp((table_lookup[i].name),(input))==0)
 			{
-				
+				//calling the function
 				(table_lookup[i].func1)();
 				break;
 
