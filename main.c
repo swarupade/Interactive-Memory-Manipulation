@@ -34,7 +34,7 @@ void main()
 		//look up table
 		table table_lookup[] =
 		{
-			{help,"help"},
+		//	{help,"help"},
 			{free_memory,"free"},
 			{allocate,"allocate"},
 			{display,"display"},
